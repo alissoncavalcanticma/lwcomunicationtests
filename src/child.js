@@ -16,7 +16,10 @@ export default class App extends LightningElement {
   }
 
   buscaPrint(){
-    this.dispatchEvent(new CustomEvent('recebePrint'));
+    const event = new CustomEvent('recebeprint', {
+      detail: {nome:"Christian", idade: 0.5, time: "Corinthians"}
+    });
+    this.dispatchEvent(event);
   }
   
 }

@@ -6,7 +6,10 @@ export default class App extends LightningElement {
   print = "";
   
   mandaPrint(){
-    alert("foi 2");
+    this.print =  "Meu filho se chama " + event.detail.nome + 
+                  ", e seu time é " + event.detail.time +
+                  ", apesar de ter apenas " + event.detail.idade +
+                  " meses de vida.";
     
   }
 }
